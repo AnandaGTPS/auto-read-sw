@@ -162,6 +162,7 @@ wily.ev.on("connection.update",async  (s) => {
     wily.ev.on('creds.update', saveCreds)
     wily.ev.on("messages.upsert",  () => { })
 }
+return startwily() 
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
